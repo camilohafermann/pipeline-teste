@@ -1,11 +1,12 @@
 name: Regressivo QAzando
 on: #momento que vai ser executando
   pull_request:
-    branches: [main]
+    branches: [master]
+
 jobs:
   cypress-run:
-      runs-on: ubuntu-latest
-      steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Clonar o projeto
         uses: actions/checkout@v6
 
